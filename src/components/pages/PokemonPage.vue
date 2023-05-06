@@ -8,7 +8,7 @@
     <h1>¿Quién es ese pokemon?</h1>
 
     <!--IMAGEN-->
-    <PokemonPictures pokemonId="pokemonAnswer.id" :showPokemon="showPokemon" />
+    <PokemonPictures :pokemonId="pokemonAnswer.id" :showPokemon="showPokemon" />
     <!--OPCIONES-->
     <PokemonOptions :options="pokemonArr" @selection="checkAnswer($event)" />
     <div v-if="showAnswer">
